@@ -21,10 +21,10 @@ Inspirerat av TailwindCSS, men betydligt mindre och enklare att förstå, modifi
 
 ## 🚀 Kom igång
 
-### 1. Inkludera Breeze.css
+### 1. Inkludera Breezecss.css
 
 ```html
-<link rel="stylesheet" href="dist/breeze.css">
+<link rel="stylesheet" href="dist/breezecss.css">
 ```
 
 ### 2. Börja skriva HTML
@@ -76,7 +76,7 @@ Breeze kommer med grundläggande byggblock: knappar, kort, badges m.m. som du en
 ├── index.html         ← Dokumentationssida
 ├── playground.html     ← Live preview & kodeditor
 ├── dist/
-│   └── breeze.css      ← Ramverket
+│   └── breezecss.css      ← Ramverket
 ├── scripts/
 │   └── playground.js   ← JS för playground
 ```
@@ -96,7 +96,7 @@ Det här projektet är öppet för förbättringar! Skapa issues eller skicka en
 
 ## 📄 Licens
 
-MIT © Ditt Namn eller Ditt Företag
+MIT © Peter Ahlgren
 
 ---
 
