@@ -1,0 +1,10 @@
+{
+    "name": "breezecss",
+    "version": "0.1.0",
+    "description": "A minimal utility-fiirst CSS framework",
+    "scripts": {
+        "build": "node build.js"
+    },
+    "author": "Peter Ahlgren",
+    "license": "MIT"
+}
