@@ -1,13 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BreezeCSS Demo</title>
-    <link rel="stylesheet" href="dist/breezecss.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Breeze.css – Full Documentation</title>
+    <link rel="stylesheet" href="./dist/breezecss.css" />
+    <style>
+        body { font-family: sans-serif; padding: 2rem; line-height: 1.6; }
+        h1, h2, h3 { color: #1e3a8a; }
+        code { background: #f3f4f6; padding: 0.2rem 0.4rem; border-radius: 4px; }
+        pre { background: #f9fafb; padding: 1rem; border-radius: 8px; overflow-x: auto; }
+        section { margin-bottom: 3rem; }
+        .example { border: 1px solid #ddd; padding: 1rem; border-radius: 6px; background: #fff; }
+    </style>
 </head>
-<body class="font-sans p-3">
-    <h1 class=""text-center mb-3">Hello BreezeCSS</h1>
-    <button class=""bg-primary text-white p-2 rounded-md">Click me</button>
+<body class="bg-white text-blue-900">
+    <h1 class="text-4xl font-bold mb-4">Breeze.css Documentation</h1>
+    <p class="mb-4">A minimal utility-first CSS framework inspired by Tailwind, but simpler and lighter.</p>
+
+    <section>
+        <h2 class="text-2xl font-semibold">Installation</h2>
+        <p>Include the generated CSS file in your project:</p>
+        <pre><code>&lt;link rel="stylesheet" href="dist/breezecss.css" /&gt;</code></pre>
+    </section>
+
+    <section>
+        <h2 class="text-2xl font-semibold">Basic Usage</h2>
+        <p>Use utility classes directly in your HTML:</p>
+        <pre><code>&lt;div class="p-4 bg-blue-100 text-blue-900 rounded"&gt;
+    Hello Breeze!
+    &lt;/div&gt;</code></pre>
+        <div class="example p-4 bg-blue-100 text-blue-900 rounded">Hello Breeze!</div>
+    </section>
+
+    <section>
+        <h2 class="text-2xl font-semibold">Core Utilities</h2>
+        <ul class="list-disc pl-6">
+            <li><strong>Spacing:</strong> <code>.p-1</code> to <code>.p-6</code>, <code>.m-1</code> to <code>.m-6</code></li>
+            <li><strong>Flexbox & Grid:</strong> <code>.flex</code>, <code>.items-center</code>, <code>.justify-between</code>, <code>.grid</code>, <code>.grid-cols-2</code>, <code>.gap-4</code></li>
+            <li><strong>Display:</strong> <code>.block</code>, <code>.inline-block</code>, <code>.hidden</code></li>
+            <li><strong>Text:</strong> <code>.text-center</code>, <code>.text-left</code>, <code>.font-bold</code>, <code>.text-sm</code> to <code>.text-3xl</code></li>
+            <li><strong>Colors:</strong> <code>.bg-{color}-{shade}</code>, <code>.text-{color}-{shade}</code>, <code>.border-{color}-{shade}</code></li>
+            <li><strong>Borders:</strong> <code>.border</code>, <code>.border-2</code>, <code>.rounded</code>, <code>.rounded-lg</code></li>
+            <li><strong>Buttons:</strong> <code>.btn</code>, <code>.btn-primary</code>, <code>.btn-secondary</code>, <code>.btn-danger</code></li>
+            <li><strong>Forms:</strong> <code>.input</code>, <code>.select</code>, <code>.textarea</code></li>
+            <li><strong>Responsive:</strong> Prefix with <code>sm:</code>, <code>md:</code>, <code>lg:</code> (e.g. <code>md:text-xl</code>)</li>
+            <li><strong>Dark Mode:</strong> Add <code>data-theme="dark"</code> to <code>&lt;html&gt;</code></li>
+            <li><strong>Animations:</strong> <code>.fade-in</code>, <code>.slide-in</code>, <code>.bounce</code></li>
+        </ul>
+    </section>
+
+    <section>
+        <h2 class="text-2xl font-semibold">Dark Mode</h2>
+        <p>Enable dark mode by setting <code>data-theme="dark"</code> on the <code>&lt;html&gt;</code> tag.</p>
+        <pre><code>&lt;html data-theme="dark"&gt;</code></pre>
+        <div class="example" style="background: #111; color: #eee; padding: 1rem;">This would appear in dark mode</div>
+    </section>
+
+    <section>
+        <h2 class="text-2xl font-semibold">Live Playground</h2>
+        <p>Try it live in the <a href="playground.html" class="text-blue-700 underline">Breeze.css Playground</a>.</p>
+    </section>
+
+    <section>
+        <h2 class="text-2xl font-semibold">Customize</h2>
+        <p>Edit the source files in <code>utilities/</code> and re-run <code>node build.js</code> to generate your own build.</p>
+    </section>
+
+    <footer class="mt-12 pt-4 border-t text-sm text-gray-600">
+        <p>Made with ❤️ by <a href="https://peterahlgren.com" target="_blank">Peter Ahlgren</a>. Breeze.css is open source and fully customizable.</p>
+    </footer>
 </body>
 </html>
